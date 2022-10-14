@@ -21637,17 +21637,21 @@ webpackContext.id = "./node_modules/moment/locale sync recursive ^\\.\\/.*$";
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
+// This entry need to be wrapped in an IIFE because it need to be in strict mode.
 (() => {
+"use strict";
 /*!******************!*\
   !*** ./index.js ***!
   \******************/
-var moment = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
 
+
+var moment = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
 console.log("Hello from javascript!");
 console.log(moment().startOf('day').fromNow());
 console.log(moment().endOf('day').fromNow());
-console.log(x);
+var name = "Bob";
+var time = "today";
+console.log("Hello " + name + ", how are you " + time + "?");
 })();
 
 /******/ })()
